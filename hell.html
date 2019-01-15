@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+
+
+
+<head>
+    <title>Love Life - About Us</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css" media="screen">
+        @import url("css/layout.css");
+    </style>
+</head>
+
+<script language="javascript" type="text/javascript">
+    function clearText(field) {
+        if (field.defaultValue == field.value) field.value = '';
+        else if (field.value == '') field.value = field.defaultValue;
+    }
+</script>
+
+<body>
+    <div id="templatemo_container">
+        <!--  Free CSS Templates from www.templatemo.com -->
+        <div id="templatemo_header">
+            <!-- <div id="templatemo_login_box">
+                <form method="get" action="#">
+                    <label>Email</label><input class="inputfield" name="email_address" type="text" />&nbsp;&nbsp;&nbsp;
+                    <label>Password</label><input class="inputfield" name="password" type="password" />
+                    <input class="button" type="submit" name="Submit" value="" />
+                </form>
+                <a href="#">Sign up</a>
+            </div> -->
+            <!-- end of login box -->
+        </div>
+
+        <div id="templatemo_menu">
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="stories.html">Successful Stories</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="about_us.html">Company</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="layout">
+            <div id="header">
+
+            </div>
+        </div>
+
+        <div class="form">
+
+            <p>Please fill this form.</p>
+            <p>Don't skip any stages</p>
+
+            <input id="one" type="radio" name="stage" checked="checked" />
+            <input id="two" type="radio" name="stage" />
+            <input id="three" type="radio" name="stage" />
+            <input id="four" type="radio" name="stage" />
+            <!-- <input id="five" type="radio" name="stage" />
+        <input id="six" type="radio" name="stage" /> -->
+
+            <div class="stages">
+                <label for="one">1</label>
+                <label for="two">2</label>
+                <label for="three">3</label>
+                <label for="four">4</label>
+                <!-- <label for="five">5</label>
+            <label for="six">6</label> -->
+            </div>
+
+            <span class="progress"><span></span></span>
+
+            <div class="panels">
+                <div data-panel="one">
+                    <h4>Stage 1:Personal Details</h4>
+
+
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" />
+                    <br>
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Others</option>
+        </select>
+                    <label for="look">Looking For:</label>
+                    <select name="look" id="look">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Others</option>
+        </select>
+
+
+
+                    <br>
+                    <br>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" value="18">
+                    <br>
+                    <label for="birthdate">Date of birth:</label>
+                    <input type="date" name="birthdate">
+                    <br>
+                    <label for="status">Marital Status:</label>
+                    <select name="country" id="country">
+          <option>prefer not to say</option>
+          <option>Married</option>
+          <option>Single</option>
+          <option>divorced</option>
+        </select>
+                    <br>
+                    <label for="city">city:</label>
+                    <input type="city" name="city" value="Kigali">
+
+                    <br>
+                    <label for="country">Which country:</label>
+                    <select name="country" id="country">
+          <option>Malawi</option>
+          <option>Rwanda</option>
+          <option>Kenya</option>
+          <option>Uganda</option>
+          <option>tanzania</option>
+          <option>angola</option>
+        </select>
+                    </fieldset>
+
+
+
+
+                    <!-- <input type="text" placeholder="First Name" /> -->
+                </div>
+                <div data-panel="two">
+                    <h4>Stage 2:My self Summary</h4>
+
+                    <textarea id="magali">About Myself...</textarea>
+
+                    <br>
+
+                    <textarea id="alice">Looking For...</textarea>
+
+
+                    <!-- <input type="text" placeholder="Last Name" /> -->
+                </div>
+                <div data-panel="three">
+                    <h4>Stage 3:Physical Appearance</h4>
+                    <fieldset>
+                        <legend>Your Indicators</legend>
+                        <label for="height">Height:</label>
+                        <label class="label-range">Short</label>
+                        <input type="range" name="height" min="0" max="50" style="width: 50%" />
+                        <label class="label-range">Tall</label>
+                        <br>
+                        <label for="salary">Salary:</label>
+                        <label class="label-range">Poor</label>
+                        <input type="range" name="salary" min="0" max="100" />
+                        <label class="label-range">Rich</label>
+
+
+                        <label for="weight">Weight:</label>
+                        <input type="number" name="weight" />
+                        <br>
+
+                        <label for="hair">Hair Color:</label>
+                        <select>
+                          <option>Black</option>
+                          <option>Brown</option>
+                          <option>Grey</option>
+                        </select>
+
+                        <!-- <input type="radio" name="hair" value="Black" checked> Black<br>
+                        <input type="radio" name="hair" value="Brown"> Brown<br>
+                        <input type="radio" name="hair" value="Gray"> Grey<br> -->
+
+
+                    </fieldset>
+
+                    <!-- <input type="text" placeholder="Address" /> -->
+                </div>
+                <div data-panel="four">
+                    <h4>Stage 4:Lifestyle</h4>
+
+                    <label for="interest">Interest:</label>
+                    <input type="text" name="interest" />
+                    <br>
+                    <label for="ideal">Ideal First Date:</label>
+                    <input type="text" name="ideal" />
+                    <br>
+                    <label for="looking">Looking for:</label>
+                    <select name="looking" id="looking">
+          <option>Just friends</option>
+          <option>friends with Benefits</option>
+          <option>Partner for life</option>
+          <option>sugar dady</option>
+          <option>sugar mamy</option>
+
+        </select>
+                    <br>
+                    <br>
+                    <label for="smoking">Smoking:</label>
+                    <select name="Smoking" id="smoking">
+          <option>Daily Smoker</option>
+          <option>Casual smoker</option>
+          <option> I don't smoke</option>
+          <option>Prefer not to say</option>
+        </select>
+                    <br>
+                    <br>
+                    <label for="Languages">Languages:</label>
+                    <input type="text" name="Languages" />
+
+                </div>
+                <button>Next</button>
+
+            </div>
+</body>
+
+</html>

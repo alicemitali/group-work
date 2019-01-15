@@ -186,8 +186,8 @@ img {
 }
 
 #menu {
-    float: left;
-    width: 2500px;
+    /* float: left; */
+    width: 150%;
     background: url(../images/menu_bg.gif) no-repeat 0 0
 }
 
