@@ -80,17 +80,17 @@
                     <h4>Stage 1:Personal Details</h4>
 
 
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" />
+                    <label for="name">amazina:</label>
+                    <input type="text" id="name" />
                     <br>
                     <label for="gender">Gender:</label>
-                    <select name="gender" id="gender">
+                    <select id="gender">
           <option>Male</option>
           <option>Female</option>
           <option>Others</option>
         </select>
                     <label for="look">Looking For:</label>
-                    <select name="look" id="look">
+                    <select id="look">
           <option>Male</option>
           <option>Female</option>
           <option>Others</option>
@@ -101,13 +101,13 @@
                     <br>
                     <br>
                     <label for="age">Age:</label>
-                    <input type="number" name="age" value="18">
+                    <input type="number" id="age" value="18">
                     <br>
-                    <label for="birthdate">Date of birth:</label>
-                    <input type="date" name="birthdate">
-                    <br>
+                    <!-- <label for="birthdate">Date of birth:</label>
+                    <input type="date" id="birthdate">
+                    <br> -->
                     <label for="status">Marital Status:</label>
-                    <select name="country" id="country">
+                    <select id="status">
           <option>prefer not to say</option>
           <option>Married</option>
           <option>Single</option>
@@ -115,11 +115,11 @@
         </select>
                     <br>
                     <label for="city">city:</label>
-                    <input type="city" name="city" value="Kigali">
+                    <input type="text" id="city" value="Kigali">
 
                     <br>
                     <label for="country">Which country:</label>
-                    <select name="country" id="country">
+                    <select id="country">
           <option>Malawi</option>
           <option>Rwanda</option>
           <option>Kenya</option>
@@ -140,6 +140,7 @@
                     <textarea id="magali">About Myself...</textarea>
 
                     <br>
+                    <br>
 
                     <textarea id="alice">Looking For...</textarea>
 
@@ -150,23 +151,28 @@
                     <h4>Stage 3:Physical Appearance</h4>
                     <fieldset>
                         <legend>Your Indicators</legend>
-                        <label for="height">Height:</label>
-                        <label class="label-range">Short</label>
-                        <input type="range" name="height" min="0" max="50" style="width: 50%" />
-                        <label class="label-range">Tall</label>
+                        <p><label for="range_height">height(/cm): </label> <input type="range" id="height" class="slider" min="0" max="300" value="75">
+                            <span class="slider_label"></span></p>
+
                         <br>
                         <label for="salary">Salary:</label>
-                        <label class="label-range">Poor</label>
-                        <input type="range" name="salary" min="0" max="100" />
-                        <label class="label-range">Rich</label>
+                        <select id="salary">
+                            <option>very poor</option>
+                            <option>poor</option>
+                            <option>Average</option>
 
+<option>rich</option>
+<option>very Rich </option>
 
+                        </select>
+                        <br>
+                        <br>
                         <label for="weight">Weight:</label>
-                        <input type="number" name="weight" />
+                        <input type="number" id="weight" />
                         <br>
 
                         <label for="hair">Hair Color:</label>
-                        <select>
+                        <select id="color">
                           <option>Black</option>
                           <option>Brown</option>
                           <option>Grey</option>
@@ -175,7 +181,7 @@
                         <!-- <input type="radio" name="hair" value="Black" checked> Black<br>
                         <input type="radio" name="hair" value="Brown"> Brown<br>
                         <input type="radio" name="hair" value="Gray"> Grey<br> -->
-
+                        <br>
 
                     </fieldset>
 
@@ -185,13 +191,13 @@
                     <h4>Stage 4:Lifestyle</h4>
 
                     <label for="interest">Interest:</label>
-                    <input type="text" name="interest" />
+                    <input type="text" id="interest" />
                     <br>
                     <label for="ideal">Ideal First Date:</label>
-                    <input type="text" name="ideal" />
+                    <input type="text" id="ideal" />
                     <br>
                     <label for="looking">Looking for:</label>
-                    <select name="looking" id="looking">
+                    <select id="looking">
           <option>Just friends</option>
           <option>friends with Benefits</option>
           <option>Partner for life</option>
@@ -200,7 +206,9 @@
 
         </select>
                     <br>
+
                     <br>
+
                     <label for="smoking">Smoking:</label>
                     <select name="Smoking" id="smoking">
           <option>Daily Smoker</option>
@@ -211,10 +219,10 @@
                     <br>
                     <br>
                     <label for="Languages">Languages:</label>
-                    <input type="text" name="Languages" />
+                    <input type="text" id="languages" />
 
                 </div>
-                <button>Next</button>
+                <button id="next">Next</button>
 
             </div>
 </body>
