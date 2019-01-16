@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5em;
-    font-family: Verdana, Arial, san-serif;
-    font-size: 11px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
     color: #3d3939;
     background: #d95995 url(images/templatemo_main_bg.jpg) top repeat-x;
 }
@@ -491,7 +491,6 @@ img.service-img {
     color: #99FFFF;
     text-decoration: none
 }
-
 
 /***** inner page css starts *****/
 
