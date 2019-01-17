@@ -1,8 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
 
 
@@ -15,26 +13,14 @@
     </style>
 </head>
 
-<script language="javascript" type="text/javascript">
-    function clearText(field) {
-        if (field.defaultValue == field.value) field.value = '';
-        else if (field.value == '') field.value = field.defaultValue;
-    }
+
 </script>
 
 <body>
     <div id="templatemo_container">
-        <!--  Free CSS Templates from www.templatemo.com -->
+
         <div id="templatemo_header">
-            <!-- <div id="templatemo_login_box">
-                <form method="get" action="#">
-                    <label>Email</label><input class="inputfield" name="email_address" type="text" />&nbsp;&nbsp;&nbsp;
-                    <label>Password</label><input class="inputfield" name="password" type="password" />
-                    <input class="button" type="submit" name="Submit" value="" />
-                </form>
-                <a href="#">Sign up</a>
-            </div> -->
-            <!-- end of login box -->
+
         </div>
 
         <div id="templatemo_menu">
@@ -52,45 +38,32 @@
             </div>
         </div>
 
-        <div class="form">
-
-            <p>Please fill this form.</p>
-            <p>Don't skip any stages</p>
-
-            <input id="one" type="radio" name="stage" checked="checked" />
-            <input id="two" type="radio" name="stage" />
-            <input id="three" type="radio" name="stage" />
-            <input id="four" type="radio" name="stage" />
-            <!-- <input id="five" type="radio" name="stage" />
-        <input id="six" type="radio" name="stage" /> -->
-
-            <div class="stages">
-                <label for="one">1</label>
-                <label for="two">2</label>
-                <label for="three">3</label>
-                <label for="four">4</label>
-                <!-- <label for="five">5</label>
-            <label for="six">6</label> -->
-            </div>
-
-            <span class="progress"><span></span></span>
-
-            <div class="panels">
-                <div data-panel="one">
-                    <h4>Stage 1:Personal Details</h4>
+        <form id="RegForm">
 
 
-                    <label for="name">amazina:</label>
-                    <input type="text" id="name" />
-                    <br>
-                    <label for="gender">Gender:</label>
-                    <select id="gender">
+
+
+
+
+
+
+
+
+
+            <div class="tab">Stage 1:Personal Details
+
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" />
+                <br>
+                <label for="gender">Gender:</label>
+                <select id="gender">
           <option>Male</option>
           <option>Female</option>
           <option>Others</option>
         </select>
-                    <label for="look">Looking For:</label>
-                    <select id="look">
+                <label for="look">Looking For:</label>
+                <select id="look">
           <option>Male</option>
           <option>Female</option>
           <option>Others</option>
@@ -98,28 +71,26 @@
 
 
 
-                    <br>
-                    <br>
-                    <label for="age">Age:</label>
-                    <input type="number" id="age" value="18">
-                    <br>
-                    <!-- <label for="birthdate">Date of birth:</label>
-                    <input type="date" id="birthdate">
-                    <br> -->
-                    <label for="status">Marital Status:</label>
-                    <select id="status">
+                <br>
+                <br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" value="18">
+                <br>
+
+                <label for="status">Marital Status:</label>
+                <select id="status">
           <option>prefer not to say</option>
           <option>Married</option>
           <option>Single</option>
           <option>divorced</option>
         </select>
-                    <br>
-                    <label for="city">city:</label>
-                    <input type="text" id="city" value="Kigali">
+                <br>
+                <label for="city">city:</label>
+                <input type="text" id="city" value="Kigali">
 
-                    <br>
-                    <label for="country">Which country:</label>
-                    <select id="country">
+                <br>
+                <label for="country">Which country:</label>
+                <select id="country">
           <option>Malawi</option>
           <option>Rwanda</option>
           <option>Kenya</option>
@@ -127,77 +98,74 @@
           <option>tanzania</option>
           <option>angola</option>
         </select>
-                    </fieldset>
+                </fieldset>
+
+            </div>
 
 
 
 
-                    <!-- <input type="text" placeholder="First Name" /> -->
-                </div>
-                <div data-panel="two">
-                    <h4>Stage 2:My self Summary</h4>
-
-                    <textarea id="magali">About Myself...</textarea>
-
-                    <br>
-                    <br>
-
-                    <textarea id="alice">Looking For...</textarea>
+            <div class="tab">Stage 2:My self Summary
 
 
-                    <!-- <input type="text" placeholder="Last Name" /> -->
-                </div>
-                <div data-panel="three">
-                    <h4>Stage 3:Physical Appearance</h4>
-                    <fieldset>
-                        <legend>Your Indicators</legend>
-                        <p><label for="range_height">height(/cm): </label> <input type="range" id="height" class="slider" min="0" max="300" value="75">
-                            <span class="slider_label"></span></p>
+                <textarea id="magali">About Myself...</textarea>
 
-                        <br>
-                        <label for="salary">Salary:</label>
-                        <select id="salary">
+                <br>
+                <br>
+
+                <textarea id="alice">Looking For...</textarea>
+
+
+
+            </div>
+            <div class="tab">Stage 3:Physical Appearance
+
+
+
+                <p><label for="range_height">height(/cm): </label> <input type="range" id="height" class="slider" min="0" max="300" value="75">
+                    <span class="slider_label"></span></p>
+
+                <br>
+                <label for="salary">Salary:</label>
+                <select id="salary">
                             <option>very poor</option>
                             <option>poor</option>
                             <option>Average</option>
-
-<option>rich</option>
-<option>very Rich </option>
+                             <option>rich</option>
+                             <option>very Rich </option>
 
                         </select>
-                        <br>
-                        <br>
-                        <label for="weight">Weight:</label>
-                        <input type="number" id="weight" />
-                        <br>
+                <br>
+                <br>
+                <label for="weight">Weight:</label>
+                <input type="number" id="weight" />
+                <br>
 
-                        <label for="hair">Hair Color:</label>
-                        <select id="color">
+                <label for="hair">Hair Color:</label>
+                <select id="color">
                           <option>Black</option>
                           <option>Brown</option>
                           <option>Grey</option>
                         </select>
 
-                        <!-- <input type="radio" name="hair" value="Black" checked> Black<br>
-                        <input type="radio" name="hair" value="Brown"> Brown<br>
-                        <input type="radio" name="hair" value="Gray"> Grey<br> -->
-                        <br>
 
-                    </fieldset>
+                <br>
 
-                    <!-- <input type="text" placeholder="Address" /> -->
-                </div>
-                <div data-panel="four">
-                    <h4>Stage 4:Lifestyle</h4>
 
-                    <label for="interest">Interest:</label>
-                    <input type="text" id="interest" />
-                    <br>
-                    <label for="ideal">Ideal First Date:</label>
-                    <input type="text" id="ideal" />
-                    <br>
-                    <label for="looking">Looking for:</label>
-                    <select id="looking">
+
+
+            </div>
+            <div class="tab">Stage 4:Lifestyle
+
+
+                <label for="interest">Interest:</label>
+                <input type="text" id="interest" />
+                <br>
+                <label for="ideal">Ideal First Date:</label>
+                <input type="text" id="ideal" />
+                <br>
+                <label for="looking">Looking for:</label>
+                <select id="looking">
           <option>Just friends</option>
           <option>friends with Benefits</option>
           <option>Partner for life</option>
@@ -205,26 +173,67 @@
           <option>sugar mamy</option>
 
         </select>
-                    <br>
+                <br>
 
-                    <br>
+                <br>
 
-                    <label for="smoking">Smoking:</label>
-                    <select name="Smoking" id="smoking">
+                <label for="smoking">Smoking:</label>
+                <select name="Smoking" id="smoking">
           <option>Daily Smoker</option>
           <option>Casual smoker</option>
           <option> I don't smoke</option>
           <option>Prefer not to say</option>
         </select>
+                <br>
+                <br>
+                <label for="Languages">Languages:</label>
+                <input type="text" id="languages" />
+            </div>
+            <div class="tab">Login Info:
+                <p><input type="email" placeholder="E-mail" id="email"> <br>
+                    <p><input type="text" placeholder="Username.." id="username"></p>
                     <br>
+                    <input type="password" placeholder="Password" id="password" required>
                     <br>
-                    <label for="Languages">Languages:</label>
-                    <input type="text" id="languages" />
-
-                </div>
-                <button id="next">Next</button>
+                    <input type="password" placeholder="Confirm Password" id="confirm_password" required>
 
             </div>
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+            </div>
+
+            <div style="text-align:center;margin-top:40px;">
+
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+        </form>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+        <script src="js/scripts.js"></script>
+
+
+        <div class="cleaner_with_height">&nbsp;</div>
+    </div>
+
+    <div id="templatemo_footer">
+
+        <div style="clear: both; margin-bottom: 10px;">
+        </div>
+
+        <a href="index.html">Home</a> | <a href="stories.html">Successful stories</a> | <a href="privacy.html">Privacy
+        Policies</a> | <a href="contact_us.html">FAQs</a> | <a href="contact_us.html">Contact Us</a><br /> Copyright © 2019 <a href="#about_us.html"><strong>Dream dating</strong></a> |
+
+    </div>
+    <!-- end of footer -->
+
+
 </body>
 
 </html>
