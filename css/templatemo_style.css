@@ -379,5 +379,17 @@ contact>.request {
     background-color: #FFF;
 }
 
+label {
+    color: white;
+}
+
+#password {
+    color: white;
+}
+
+#login {
+    color: black;
+}
+
 
 /* end of menu */

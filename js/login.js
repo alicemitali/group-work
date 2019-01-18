@@ -13,7 +13,7 @@ $(document).ready(function() {
         var password1 = $("#password").val();
         firebase.auth().signInWithEmailAndPassword(email1, password1).then(function(res) {
             console.log(res)
-            window.location.replace("../last-added.html");
+            window.location.replace("../dating-website/last-added.html");
         }).catch(function(error) {
             // Handle Errors here.
             var errorCode = error.code;
