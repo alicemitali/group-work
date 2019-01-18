@@ -14,11 +14,11 @@
 
         <div id="templatemo_header">
             <div id="templatemo_login_box">
-                <form method="get" action="#">
-                    <label>Email</label><input class="inputfield" name="email_address" type="text" />&nbsp;&nbsp;&nbsp;
-                    <label>Password</label><input class="inputfield" name="password" type="password" />
-                    <input class="button" type="submit" name="Submit" value="" />
-                </form>
+                <div>
+                    <label>Email</label><input class="inputfield" name="email_address" type="text" id="email" />&nbsp;&nbsp;&nbsp;
+                    <label>Password</label><input class="inputfield" name="password" type="password" id="password" />
+                    <input class="button" type="button" name="Submit" id="login" />
+                </div>
                 <a href="hell.html">Sign up</a>
             </div>
             <!-- end of login box -->
@@ -182,7 +182,9 @@
         <!-- end of footer -->
 
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>

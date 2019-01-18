@@ -18,8 +18,7 @@ $(document).ready(function() {
             // document.getElementById('age').innerHTML = 'gtcu'
             // console.log(childData.Age)
 
-            $('#contacts').append("<tr><td class='contact'>" + childData.firstName + '</td>' + "<td class='contact'>" + childData.lastName + '</td>' + "<td class='contact'>" + childData.gender + "<td class='contact'>" + childData.birthday + "<td class='contact'>" + childData.motherName + "<td class='contact'>" + childData.fatherName + "<td class='contact'>" + childData.acceptancy + "<td class='contact'>" + childData.disability + "<td class='contact'>" + childData.district + "<td class='contact'>" + childData.sector + "<td class='contact'>" + childData.cell + '</td></tr>');
-
+            $('#contacts').append("<h2 class='name1'>" + childData.Name + '</h2>' + "<h2 class= 'age1'>" + childData.Age + '</h2>' + "<h2 class='gender1'>" + childData.Gender + '</h2>' + "<h2 class='look1'>" + childData.look + '</h2>' + "<h2 class='status1'>" + childData.Status + '</h2>' + "<h2 class='country1'>" + childData.Country + '</h2>' + "<h2 class='city1'>" + childData.City + '</h2>' + "<h2 class='magali1'>" + childData.Magali + '</h2>' + "<h2 class='alice1'>" + childData.Alice + '</h2>' + "<h2 class='height1'>" + childData.Height + '</h2>' + "<h2 class='salary1'>" + childData.Salary + '</h2>' + "<h2 class='weight1'>" + childData.Weight + '</h2>' + "<h2 class= 'interest1'>" + childData.Interest + '</h2 > ' + "<h2 class='ideal1'>" + childData.Ideal + '</h2 > ' + "<h2 class='languages1'>" + childData.Languages + '</h2 > ' + "<h2 class='color1'>" + childData.Color + '</h2 > ' + "<h2 class='looking1'> Looking: " + childData.Looking + '</h2 > ' + "<h2 class='smoking1'>" + childData.Smoking + '</h2 > ');
 
         });
 

@@ -39,8 +39,14 @@
         </div>
 
         <div id="RegForm">
-
-            <div class="tab" id="tab1">Stage 1:Personal Details
+            <div class="tab" id="tab0">Login Info:
+                <p><input type="email" placeholder="E-mail" id="email"> <br>
+                    <p><input type="text" placeholder="Username.." id="username"></p>
+                    <br>
+                    <input type="password" placeholder="Password" id="password" required>
+                    <button id="next0">Next</button>
+            </div>
+            <div class="tab" id="tab1" style="display: none">Stage 1:Personal Details
 
 
                 <label for="name">Name:</label>
@@ -169,17 +175,9 @@
                 <br>
                 <label for="Languages">Languages:</label>
                 <input type="text" id="languages" />
-                <button id="next4">Next</button>
+                <button id="submit">Submit</button>
             </div>
-            <div class="tab" style="display: none" id="tab5">Login Info:
-                <p><input type="email" placeholder="E-mail" id="email"> <br>
-                    <p><input type="text" placeholder="Username.." id="username"></p>
-                    <br>
-                    <input type="password" placeholder="Password" id="password" required>
-                    <br>
-                    <input type="password" placeholder="Confirm Password" id="confirm_password" required>
-                    <button id="submit">Submit</button>
-            </div>
+
             <!-- <div style="overflow:auto;">
                 <div style="float:right;">
                     <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>

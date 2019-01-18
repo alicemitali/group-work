@@ -363,5 +363,21 @@ img {
     font-weight: normal;
 }
 
+contact>.request {
+    background-color: #4f7bc1;
+    font-family: Hind;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    margin-bottom: 150px;
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+form {
+    background-color: #FFF;
+}
+
 
 /* end of menu */

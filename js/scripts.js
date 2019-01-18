@@ -9,6 +9,24 @@ var config = {
 firebase.initializeApp(config);
 //getting values
 $(document).ready(function() {
+    $('#next0').click(function() {
+        var email1 = $("#email").val();
+        var password1 = $("#password").val();
+        // var auth = {
+        //     email: email1,
+        //     password: password1,
+        // }
+        firebase.auth().createUserWithEmailAndPassword(email1, password1).then(function(res) {
+            console.log(res)
+        }).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // ...
+        });
+        $('#tab0').hide()
+        $('#tab1').show()
+    })
     $('#next1').click(function() {
         $('#tab1').hide()
         $('#tab2').show()
@@ -110,7 +128,7 @@ $(document).ready(function() {
 
             // firebase.database().ref().child('\Informations').push(data)
 
-            $('#contacts').append("<h2 class='name1'>" + childData.Name + '</h2>' + "<h2 class= 'age1'>" + childData.Age + '</h2>' + "<h2 class='gender1'>" + childData.Gender + '</h2>' + "<h2 class='look1'>" + childData.look + '</h2>' + "<h2 class='status1'>" + childData.Status + '</h2>' + "<h2 class='country1'>" + childData.Country + '</h2>' + "<h2 class='city1'>" + childData.City + '</h2>' + "<h2 class='magali1'>" + childData.Magali + '</h2>' + "<h2 class='alice1'>" + childData.Alice + '</h2>' + "<h2 class='height1'>" + childData.Height + '</h2>' + "<h2 class='salary1'>" + childData.Salary + '</h2>' + "<h2 class='weight1'>" + childData.Weight + '</h2>' + "<h2 class= 'interest1'>" + childData.Interest + '</h2 > ' + "<h2 class='ideal1'>" + childData.Ideal + '</h2 > ' + "<h2 class='languages1'>" + childData.Languages + '</h2 > ' + "<h2 class='color1'>" + childData.Color + '</h2 > ' + "<h2 class='looking1'>" + childData.Looking + '</h2 > ' + "<h2 class='smoking1'>" + childData.Smoking + '</h2 > ');
+
             // var value = e.options[e.selectedIndex].value;
             // var text = e.options[e.selectedIndex].text;
 
