@@ -13,10 +13,14 @@ $(document).ready(function() {
     leadsRef.on('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();
-            $(".age1").append(childData.Age);
-            $(".name1").append(childData.Name);
+            // $(".age1").append(childData.Age);
+            // $(".name1").append(childData.Name);
             // document.getElementById('age').innerHTML = 'gtcu'
             // console.log(childData.Age)
+
+            $('#contacts').append("<tr><td class='contact'>" + childData.firstName + '</td>' + "<td class='contact'>" + childData.lastName + '</td>' + "<td class='contact'>" + childData.gender + "<td class='contact'>" + childData.birthday + "<td class='contact'>" + childData.motherName + "<td class='contact'>" + childData.fatherName + "<td class='contact'>" + childData.acceptancy + "<td class='contact'>" + childData.disability + "<td class='contact'>" + childData.district + "<td class='contact'>" + childData.sector + "<td class='contact'>" + childData.cell + '</td></tr>');
+
+
         });
 
     });

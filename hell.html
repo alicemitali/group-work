@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html >
+<html>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
 
@@ -38,19 +38,9 @@
             </div>
         </div>
 
-        <form id="RegForm">
+        <div id="RegForm">
 
-
-
-
-
-
-
-
-
-
-
-            <div class="tab">Stage 1:Personal Details
+            <div class="tab" id="tab1">Stage 1:Personal Details
 
 
                 <label for="name">Name:</label>
@@ -99,13 +89,13 @@
           <option>angola</option>
         </select>
                 </fieldset>
-
+                <button id="next1">Next</button>
             </div>
 
 
 
 
-            <div class="tab">Stage 2:My self Summary
+            <div class="tab" id="tab2" style="display: none">Stage 2:My self Summary
 
 
                 <textarea id="magali">About Myself...</textarea>
@@ -115,16 +105,12 @@
 
                 <textarea id="alice">Looking For...</textarea>
 
-
+                <button id="next2">Next</button>
 
             </div>
-            <div class="tab">Stage 3:Physical Appearance
-
-
-
+            <div class="tab" id="tab3" style="display: none">Stage 3:Physical Appearance
                 <p><label for="range_height">height(/cm): </label> <input type="range" id="height" class="slider" min="0" max="300" value="75">
                     <span class="slider_label"></span></p>
-
                 <br>
                 <label for="salary">Salary:</label>
                 <select id="salary">
@@ -133,7 +119,6 @@
                             <option>Average</option>
                              <option>rich</option>
                              <option>very Rich </option>
-
                         </select>
                 <br>
                 <br>
@@ -147,15 +132,11 @@
                           <option>Brown</option>
                           <option>Grey</option>
                         </select>
-
-
                 <br>
 
-
-
-
+                <button id="next3">Next</button>
             </div>
-            <div class="tab">Stage 4:Lifestyle
+            <div class="tab" style="display: none" id="tab4">Stage 4:Lifestyle
 
 
                 <label for="interest">Interest:</label>
@@ -188,22 +169,24 @@
                 <br>
                 <label for="Languages">Languages:</label>
                 <input type="text" id="languages" />
+                <button id="next4">Next</button>
             </div>
-            <div class="tab">Login Info:
+            <div class="tab" style="display: none" id="tab5">Login Info:
                 <p><input type="email" placeholder="E-mail" id="email"> <br>
                     <p><input type="text" placeholder="Username.." id="username"></p>
                     <br>
                     <input type="password" placeholder="Password" id="password" required>
                     <br>
                     <input type="password" placeholder="Confirm Password" id="confirm_password" required>
-
+                    <button id="submit">Submit</button>
             </div>
-            <div style="overflow:auto;">
+            <!-- <div style="overflow:auto;">
                 <div style="float:right;">
                     <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
                     <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                    <button type="submit" id="submit" style="display: none">Submit</button>
                 </div>
-            </div>
+            </div> -->
 
             <div style="text-align:center;margin-top:40px;">
 
@@ -213,25 +196,24 @@
                 <span class="step"></span>
                 <span class="step"></span>
             </div>
-        </form>
+        </div>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
         <script src="js/scripts.js"></script>
 
 
         <div class="cleaner_with_height">&nbsp;</div>
-    </div>
 
-    <div id="templatemo_footer">
+        <div id="templatemo_footer">
 
-        <div style="clear: both; margin-bottom: 10px;">
-        </div>
+            <div style="clear: both; margin-bottom: 10px;">
+            </div>
 
-        <a href="index.html">Home</a> | <a href="stories.html">Successful stories</a> | <a href="privacy.html">Privacy
+            <a href="index.html">Home</a> | <a href="stories.html">Successful stories</a> | <a href="privacy.html">Privacy
         Policies</a> | <a href="contact_us.html">FAQs</a> | <a href="contact_us.html">Contact Us</a><br /> Copyright © 2019 <a href="#about_us.html"><strong>Dream dating</strong></a> |
 
-    </div>
-    <!-- end of footer -->
+        </div>
+        <!-- end of footer -->
 
 
 </body>

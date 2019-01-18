@@ -9,35 +9,29 @@ var config = {
 firebase.initializeApp(config);
 //getting values
 $(document).ready(function() {
-    // var name1
-    // var age1
-    // var gender1
-    // var look1
-    // var status1
-    // var country1
-    // var city1
-    // var magali1
-    // var alice1
-    // var height1
-    // var weight1
-    // var interest1
-    // var ideal1
-    // var languages1
-    // var salary1
-    // var color1
-    // var looking1
-    // var smoking1
-    $('#next').click(function() {
+    $('#next1').click(function() {
+        $('#tab1').hide()
+        $('#tab2').show()
+    })
+    $('#next2').click(function() {
+        $('#tab2').hide()
+        $('#tab3').show()
+    })
+    $('#next3').click(function() {
+        $('#tab3').hide()
+        $('#tab4').show()
+    })
+    $('#next4').click(function() {
+        $('#tab4').hide()
+        $('#tab5').show()
+    })
+    $('#submit').click(function() {
+            // $("form").submit(function(event) {
 
             var name1 = $("input#name").val();
-            // $(".name1").text(name1);
 
             var age1 = $("input#age").val();
 
-            // if (age1 > 18) {
-
-            //     alert(you are not allowed to use this website);
-            // }
 
             var gender1 = $("#gender").val();
 
@@ -45,7 +39,7 @@ $(document).ready(function() {
 
             var look1 = $("#look").val();
 
-            // 
+
             var country1 = $("#country").val();
 
 
@@ -95,43 +89,34 @@ $(document).ready(function() {
                 // Status: status1,
                 Country: country1,
                 City: city1,
-                // Magali: magali1,
-                // Alice: alice1,
-                // Height: height1,
-                // Weight: weight1,
-                // Interest: interest1,
-                // Ideal: ideal1,
-                // Languages: languages1,
-                // Salary: salary1,
-                // Color: color1,
-                // Looking: looking1,
-                // Smoking: smoking1,
+                Magali: magali1,
+                Alice: alice1,
+                Height: height1,
+                Weight: weight1,
+                Interest: interest1,
+                Ideal: ideal1,
+                Languages: languages1,
+                Salary: salary1,
+                Color: color1,
+                Looking: looking1,
+                Smoking: smoking1,
+            }
+            try {
+                firebase.database().ref().child('\Informations').push(data)
+                alert("User Inserted")
+            } catch (err) {
+                console.log(err)
             }
 
-            firebase.database().ref().child('\Informations').push(data)
+            // firebase.database().ref().child('\Informations').push(data)
 
-
+            $('#contacts').append("<h2 class='name1'>" + childData.Name + '</h2>' + "<h2 class= 'age1'>" + childData.Age + '</h2>' + "<h2 class='gender1'>" + childData.Gender + '</h2>' + "<h2 class='look1'>" + childData.look + '</h2>' + "<h2 class='status1'>" + childData.Status + '</h2>' + "<h2 class='country1'>" + childData.Country + '</h2>' + "<h2 class='city1'>" + childData.City + '</h2>' + "<h2 class='magali1'>" + childData.Magali + '</h2>' + "<h2 class='alice1'>" + childData.Alice + '</h2>' + "<h2 class='height1'>" + childData.Height + '</h2>' + "<h2 class='salary1'>" + childData.Salary + '</h2>' + "<h2 class='weight1'>" + childData.Weight + '</h2>' + "<h2 class= 'interest1'>" + childData.Interest + '</h2 > ' + "<h2 class='ideal1'>" + childData.Ideal + '</h2 > ' + "<h2 class='languages1'>" + childData.Languages + '</h2 > ' + "<h2 class='color1'>" + childData.Color + '</h2 > ' + "<h2 class='looking1'>" + childData.Looking + '</h2 > ' + "<h2 class='smoking1'>" + childData.Smoking + '</h2 > ');
             // var value = e.options[e.selectedIndex].value;
             // var text = e.options[e.selectedIndex].text;
 
-            // console.log(name1)
-            // console.log(gender1)
-            // console.log(look1)
-            // console.log(age1)
-            // console.log(status1)
-            // console.log(city1)
-            // console.log(country1)
-            // console.log(magali1)
-            // console.log(alice1)
-            // console.log(height1)
-            // console.log(salary1)
-            // console.log(weight1)
-            // console.log(color1)
-            // console.log(interest1)
-            // console.log(ideal1)
-            // console.log(looking1)
-            // console.log(smoking1)
-            // console.log(languages1)
+            console.log(data)
+            '</h2>'
+            // event.preventDefault()
         })
         // var childData;
         // var leadsRef = firebase.database().ref('Informations');
@@ -157,94 +142,3 @@ $(document).ready(function() {
         // $(".looking1").text(looking1);
         // $(".smoking1").text(smoking1);
 })
-var currentTab = 0; // Current tab is set to be the first tab (0)
-showTab(currentTab); // Display the crurrent tab
-
-function showTab(n) {
-    // This function will display the specified tab of the form...
-    var x = document.getElementsByClassName("tab");
-    x[n].style.display = "block";
-    //... and fix the Previous/Next buttons:
-    if (n == 0) {
-        document.getElementById("prevBtn").style.display = "none";
-    } else {
-        document.getElementById("prevBtn").style.display = "inline";
-    }
-    if (n == x.length - 1) {
-        document.getElementById("nextBtn").innerHTML = "Submit";
-    } else {
-        document.getElementById("nextBtn").innerHTML = "Next";
-    }
-    //... and run a function that will display the correct step indicator:
-    fixStepIndicator(n);
-}
-
-function nextPrev(n) {
-    // This function will figure out which tab to display
-    var x = document.getElementsByClassName("tab");
-    // Exit the function if any field in the current tab is invalid:
-    if (n == 1 && !validateForm()) return false;
-    // Hide the current tab:
-    x[currentTab].style.display = "none";
-    // Increase or decrease the current tab by 1:
-    currentTab = currentTab + n;
-    // if you have reached the end of the form...
-    if (currentTab >= x.length) {
-        // ... the form gets submitted:
-        document.getElementById("regForm").submit();
-        return false;
-    }
-    // Otherwise, display the correct tab:
-    showTab(currentTab);
-}
-
-function validateForm() {
-    // This function deals with validation of the form fields
-    var x,
-        y,
-        i,
-        valid = true;
-    x = document.getElementsByClassName("tab");
-    y = x[currentTab].getElementsByTagName("input");
-    // A loop that checks every input field in the current tab:
-    for (i = 0; i < y.length; i++) {
-        // If a field is empty...
-        if (y[i].value == "") {
-            // add an "invalid" class to the field:
-            y[i].className += " invalid";
-            // and set the current valid status to false
-            valid = false;
-        }
-    }
-    // If the valid status is true, mark the step as finished and valid:
-    if (valid) {
-        document.getElementsByClassName("step")[currentTab].className += " finish";
-    }
-    return valid; // return the valid status
-}
-
-function fixStepIndicator(n) {
-    // This function removes the "active" class of all steps...
-    var i,
-        x = document.getElementsByClassName("step");
-    for (i = 0; i < x.length; i++) {
-        x[i].className = x[i].className.replace(" active", "");
-    }
-    //... and adds the "active" class on the current step:
-    x[n].className += " active";
-}
-
-
-var password = document.getElementById("password"),
-    confirm_password = document.getElementById("confirm_password");
-
-function validatePassword() {
-    if (password.value != confirm_password.value) {
-        confirm_password.setCustomValidity("Passwords Don't Match");
-    } else {
-        confirm_password.setCustomValidity('');
-    }
-}
-
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
